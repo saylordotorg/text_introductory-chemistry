@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Significant Figures</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s06-02-expressing-units.html"><img src="shared/images/batch-left.png"></a> <a href="s06-02-expressing-units.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-04-converting-units.html">Next Section</a> <a href="s06-04-converting-units.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="ball-ch02_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">2.3</span> Significant Figures</h2>
+    <div class="learning_objectives editable block" id="ball-ch02_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="ball-ch02_s03_l01">
+            <li>Apply the concept of significant figures to limit a measurement to the proper number of digits.</li>
+            <li>Recognize the number of significant figures in a given quantity.</li>
+            <li>Limit mathematical results to the proper number of significant figures.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="ball-ch02_s03_p01">If you use a calculator to evaluate the expression 337/217, you will get the following:</p>
+    <span class="informalequation block"><math xml:id="ball-ch02_m002" display="block"><semantics><mrow><mfrac><mrow><mn>337</mn></mrow><mrow><mn>217</mn></mrow></mfrac><mo>=</mo><mn>1.55299539171...</mn></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s03_p02">and so on for many more digits. Although this answer is correct, it is somewhat presumptuous. You start with two values that each have three digits, and the answer has <em class="emphasis">twelve</em> digits? That does not make much sense from a strict numerical point of view.</p>
+    <p class="para editable block" id="ball-ch02_s03_p03">Consider using a ruler to measure the width of an object, as shown in <a class="xref" href="#ball-ch02_s03_f01">Figure 2.6 "Expressing Width"</a>. The object is definitely more than 1 cm long, so we know that the first digit in our measurement is 1. We see by counting the tick marks on the ruler that the object is at least three ticks after the 1. If each tick represents 0.1 cm, then we know the object is at least 1.3 cm wide. But our ruler does not have any more ticks between the 0.3 and the 0.4 marks, so we can’t know exactly how much the next decimal place is. But with a practiced eye we can estimate it. Let us estimate it as about six-tenths of the way between the third and fourth tick marks, which estimates our hundredths place as 6, so we identify a measurement of 1.36 cm for the width of the object.</p>
+    <div class="figure large medium-height editable block" id="ball-ch02_s03_f01">
+        <p class="title"><span class="title-prefix">Figure 2.6</span> Expressing Width</p>
+        <img src="section_06/eb7d58a9777dbb124396d7c8bcb75793.jpg">
+        <p class="para">What is the proper way to express the width of this object?</p>
+    </div>
+    <p class="para editable block" id="ball-ch02_s03_p04">Does it make any sense to try to report a thousandths place for the measurement? No, it doesn’t; we are not exactly sure of the hundredths place (after all, it was an estimate only), so it would be fruitless to estimate a thousandths place. Our best measurement, then, stops at the hundredths place, and we report 1.36 cm as proper measurement.</p>
+    <p class="para editable block" id="ball-ch02_s03_p05">This concept of reporting the proper number of digits in a measurement or a calculation is called <span class="margin_term"><a class="glossterm">significant figures</a><span class="glossdef">The limit of the number of places a measurement can be properly expressed with.</span></span>. Significant figures (sometimes called significant digits) represent the limits of what values of a measurement or a calculation we are sure of. The convention for a measurement is that the quantity reported should be all known values and the first estimated value. The conventions for calculations are discussed as follows.</p>
+    <div class="exercises editable block" id="ball-ch02_s03_n02">
+        <h3 class="title">Example 3</h3>
+        <p class="para" id="ball-ch02_s03_p06">Use each diagram to report a measurement to the proper number of significant figures.</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l02">
+            <li>
+		                <div class="informalfigure small" id="ball-ch02_s03_f02">
+                    <img src="section_06/151d73b2e1318e4386f1be7579009b82.jpg">
+                </div>
+</li>
+            <li>
+		                <div class="informalfigure small" id="ball-ch02_s03_f03">
+                    <img src="section_06/798cdb8470615426a8cfa54bc66d8092.jpg">
+                </div>
+</li>
+        </ol>
+        <p class="simpara">Solution</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l03">
+            <li>The arrow is between 4.0 and 5.0, so the measurement is at least 4.0. The arrow is between the third and fourth small tick marks, so it’s at least 0.3. We will have to estimate the last place. It looks like about one-third of the way across the space, so let us estimate the hundredths place as 3. Combining the digits, we have a measurement of 4.33 psi (psi stands for “pounds per square inch” and is a unit of pressure, like air in a tire). We say that the measurement is reported to three significant figures.</li>
+            <li>The rectangle is at least 1.0 cm wide but certainly not 2.0 cm wide, so the first significant digit is 1. The rectangle’s width is past the second tick mark but not the third; if each tick mark represents 0.1, then the rectangle is at least 0.2 in the next significant digit. We have to estimate the next place because there are no markings to guide us. It appears to be about halfway between 0.2 and 0.3, so we will estimate the next place to be a 5. Thus, the measured width of the rectangle is 1.25 cm. Again, the measurement is reported to three significant figures.</li>
+        </ol>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <p class="para" id="ball-ch02_s03_p07">What would be the reported width of this rectangle?</p>
+        <div class="informalfigure small" id="ball-ch02_s03_f04">
+            <img src="section_06/876c28e2e2ee883eaa4a2171d85af837.jpg">
+        </div>
+        <p class="simpara"><em class="emphasis">Answer</em></p>
+        <p class="para" id="ball-ch02_s03_p08">0.63 cm</p>
+    </div>
+    <p class="para editable block" id="ball-ch02_s03_p09">In many cases, you will be given a measurement. How can you tell by looking what digits are significant? For example, the reported population of the United States is 306,000,000. Does that mean that it is <em class="emphasis">exactly</em> three hundred six million or is some estimation occurring?</p>
+    <p class="para editable block" id="ball-ch02_s03_p10">The following conventions dictate which numbers in a reported measurement are significant and which are not significant:</p>
+    <ol class="orderedlist editable block" id="ball-ch02_s03_l04">
+        <li>Any nonzero digit is significant.</li>
+        <li>Any zeros between nonzero digits (i.e., embedded zeros) are significant.</li>
+        <li>Zeros at the end of a number without a decimal point (i.e., trailing zeros) are not significant; they serve only to put the significant digits in the correct positions. However, zeros at the end of any number with a decimal point are significant.</li>
+        <li>Zeros at the beginning of a decimal number (i.e., leading zeros) are not significant; again, they serve only to put the significant digits in the correct positions.</li>
+    </ol>
+    <p class="para editable block" id="ball-ch02_s03_p11">So, by these rules, the population figure of the United States has only three significant figures: the 3, the 6, and the zero between them. The remaining six zeros simply put the 306 in the millions position. (See <a class="xref" href="#ball-ch02_s03_f05">Figure 2.7 "Significant Figures"</a> for another example.)</p>
+
+    <div class="exercises editable block" id="ball-ch02_s03_n03">
+        <h3 class="title">Example 4</h3>
+        <p class="para" id="ball-ch02_s03_p12">Give the number of significant figures in each measurement.</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l05">
+            <li>36.7 m</li>
+            <li>0.006606 s</li>
+            <li>2,002 kg</li>
+            <li>306,490,000 people</li>
+        </ol>
+        <p class="simpara">Solution</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l06">
+            <li>By rule 1, all nonzero digits are significant, so this measurement has three significant figures.</li>
+            <li>By rule 4, the first three zeros are not significant, but by rule 2 the zero between the sixes is; therefore, this number has four significant figures.</li>
+            <li>By rule 2, the two zeros between the twos are significant, so this measurement has four significant figures.</li>
+            <li>The four trailing zeros in the number are not significant, but the other five numbers are, so this number has five significant figures.</li>
+        </ol>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <p class="para" id="ball-ch02_s03_p13">Give the number of significant figures in each measurement.</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l07">
+            <li>0.000601 m</li>
+            <li>65.080 kg</li>
+        </ol>
+        <p class="simpara"><em class="emphasis">Answers</em></p>
+        <ol class="orderedlist" id="ball-ch02_s03_l08">
+            <li>three significant figures</li>
+            <li>five significant figures</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="ball-ch02_s03_p14">How are significant figures handled in calculations? It depends on what type of calculation is being performed. If the calculation is an addition or a subtraction, the rule is as follows: limit the reported answer to the rightmost column that all numbers have significant figures in common. For example, if you were to add 1.2 and 4.71, we note that the first number stops its significant figures in the tenths column, while the second number stops its significant figures in the hundredths column. We therefore limit our answer to the tenths column.</p>
+    <div class="informalfigure large block" id="fwk-ball-eq02_001" condition="equation-image">
+        <img src="section_06/529440a4e2f4b43906813b22eda127f6.jpg">
+    </div>
+    <p class="para editable block" id="ball-ch02_s03_p15">We drop the last digit—the 1—because it is not significant to the final answer.</p>
+    <p class="para editable block" id="ball-ch02_s03_p16">The dropping of positions in sums and differences brings up the topic of rounding. Although there are several conventions, in this text we will adopt the following rule: the final answer should be rounded up if the first dropped digit is 5 or greater and rounded down if the first dropped digit is less than 5.</p>
+    <div class="informalfigure large block" id="fwk-ball-eq02_002" condition="equation-image">
+        <img src="section_06/ab6a79e359c62e701d09064f4ef21621.jpg">
+    </div>
+    <div class="exercises editable block" id="ball-ch02_s03_n04">
+        <h3 class="title">Example 5</h3>
+        <p class="para" id="ball-ch02_s03_p17">Express the final answer to the proper number of significant figures.</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l09">
+            <li>101.2 + 18.702 = ?</li>
+            <li>202.88 − 1.013 = ?</li>
+        </ol>
+        <p class="simpara">Solution</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l10">
+            <li>If we use a calculator to add these two numbers, we would get 119.902. However, most calculators do not understand significant figures, and we need to limit the final answer to the tenths place. Thus, we drop the 02 and report a final answer of 119.9 (rounding down).</li>
+            <li>A calculator would answer 201.867. However, we have to limit our final answer to the hundredths place. Because the first number being dropped is 7, which is greater than 7, we round up and report a final answer of 201.87.</li>
+        </ol>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <p class="para" id="ball-ch02_s03_p18">Express the answer for 3.445 + 90.83 − 72.4 to the proper number of significant figures.</p>
+        <p class="simpara"><em class="emphasis">Answer</em></p>
+        <p class="para" id="ball-ch02_s03_p19">21.9</p>
+    </div>
+    <p class="para editable block" id="ball-ch02_s03_p20">If the operations being performed are multiplication or division, the rule is as follows: limit the answer to the number of significant figures that the data value with the <em class="emphasis">least</em> number of significant figures has. So if we are dividing 23 by 448, which have two and three significant figures each, we should limit the final reported answer to two significant figures (the lesser of two and three significant figures):</p>
+    <span class="informalequation block"><math xml:id="ball-ch02_m005" display="block"><semantics><mrow><mfrac><mrow><mn>23</mn></mrow><mrow><mn>448</mn></mrow></mfrac><mo>=</mo><mn>0.051339286...</mn><mo>=</mo><mn>0.051</mn></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s03_p21">The same rounding rules apply in multiplication and division as they do in addition and subtraction.</p>
+    <div class="exercises editable block" id="ball-ch02_s03_n05">
+        <h3 class="title">Example 6</h3>
+        <p class="para" id="ball-ch02_s03_p22">Express the final answer to the proper number of significant figures.</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l11">
+            <li>76.4 × 180.4 = ?</li>
+            <li>934.9 ÷ 0.00455 = ?</li>
+        </ol>
+        <p class="simpara">Solution</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l12">
+            <li>The first number has three significant figures, while the second number has four significant figures. Therefore, we limit our final answer to three significant figures: 76.4 × 180.4 = 13,782.56 = 13,800.</li>
+            <li>The first number has four significant figures, while the second number has three significant figures. Therefore we limit our final answer to three significant figures: 934.9 ÷ 0.00455 = 205,472.5275… = 205,000.</li>
+        </ol>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <p class="para" id="ball-ch02_s03_p23">Express the final answer to the proper number of significant figures.</p>
+        <ol class="orderedlist" id="ball-ch02_s03_l13">
+            <li>22.4 × 8.314 = ?</li>
+            <li>1.381 ÷ 6.02 = ?</li>
+        </ol>
+        <p class="simpara"><em class="emphasis">Answers</em></p>
+        <ol class="orderedlist" id="ball-ch02_s03_l14">
+            <li>186</li>
+            <li>0.229</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="ball-ch02_s03_p24">As you have probably realized by now, the biggest issue in determining the number of significant figures in a value is the zero. Is the zero significant or not? One way to unambiguously determine whether a zero is significant or not is to write a number in scientific notation. Scientific notation will include zeros in the coefficient of the number <em class="emphasis">only if they are significant</em>. Thus, the number 8.666 × 10<sup class="superscript">6</sup> has four significant figures. However, the number 8.6660 × 10<sup class="superscript">6</sup> has five significant figures. That last zero is significant; if it were not, it would not be written in the coefficient. So when in doubt about expressing the number of significant figures in a quantity, use scientific notation and include the number of zeros that are truly significant.</p>
+    <div class="key_takeaways editable block" id="ball-ch02_s03_n06">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="ball-ch02_s03_l15">
+            <li>Significant figures in a quantity indicate the number of known values plus one place that is estimated.</li>
+            <li>There are rules for which numbers in a quantity are significant and which are not significant.</li>
+            <li>In calculations involving addition and subtraction, limit significant figures based on the rightmost place that all values have in common.</li>
+            <li>In calculations involving multiplication and division, limit significant figures to the least number of significant figures in all the data values.</li>
+        </ul>
+    </div>
+    <div class="qandaset block" id="ball-ch02_s03_qs01" defaultlabel="number">
+        <h3 class="title">Exercises</h3>
+        <ol class="qandadiv" id="ball-ch02_s03_qs01_qd01">
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa01">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p1">Express each measurement to the correct number of significant figures.</p>
+                    <ol class="orderedlist" id="ball-ch02_s03_qs01_l1" numeration="loweralpha">
+                        <li>
+						                            <div class="informalfigure small" id="ball-ch02_s03_qs01_f1">
+                                <img src="section_06/f85b7d0b1d3f3563a5b973ef04349df3.jpg">
+                            </div>
+</li>
+                        <li>
+						                            <div class="informalfigure small" id="ball-ch02_s03_qs01_f2">
+                                <img src="section_06/ce52d85e441b7cc5bc8c68096a904f46.jpg">
+                            </div>
+</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa02">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p2">Express each measurement to the correct number of significant figures.</p>
+                    <ol class="orderedlist" id="ball-ch02_s03_qs01_l3" numeration="loweralpha">
+                        <li>
+						                            <div class="informalfigure small" id="ball-ch02_s03_qs01_f3">
+                                <img src="section_06/06979677f6f13c11ea559e495ebcbf85.jpg">
+                            </div>
+</li>
+                        <li>
+						                            <div class="informalfigure small" id="ball-ch02_s03_qs01_f4">
+                                <img src="section_06/36169b3148f387439c917454f0a846b1.jpg">
+                            </div>
+</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa03">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p3">How many significant figures do these numbers have?
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l5" numeration="loweralpha">                            <li>23</li>
+                            <li>23.0</li>
+                            <li>0.00023</li>
+                            <li>0.0002302</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa04">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p4">How many significant figures do these numbers have?
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l7" numeration="loweralpha">                            <li>5.44 × 10<sup class="superscript">8</sup>
+</li>
+                            <li>1.008 × 10<sup class="superscript">−5</sup>
+</li>
+                            <li>43.09</li>
+                            <li>0.0000001381</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa05">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p5">How many significant figures do these numbers have?
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l9" numeration="loweralpha">                            <li>765,890</li>
+                            <li>765,890.0</li>
+                            <li>1.2000 × 10<sup class="superscript">5</sup>
+</li>
+                            <li>0.0005060</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa06">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p6">How many significant figures do these numbers have?
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l11" numeration="loweralpha">                            <li>0.009</li>
+                            <li>0.0000009</li>
+                            <li>65,444</li>
+                            <li>65,040</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa07">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p7">Compute and express each answer with the proper number of significant figures, rounding as necessary.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l13" numeration="loweralpha">                            <li>56.0 + 3.44 = ?</li>
+                            <li>0.00665 + 1.004 = ?</li>
+                            <li>45.99 − 32.8 = ?</li>
+                            <li>45.99 − 32.8 + 75.02 = ?</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa08">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p8">Compute and express each answer with the proper number of significant figures, rounding as necessary.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l15" numeration="loweralpha">                            <li>1.005 + 17.88 = ?</li>
+                            <li>56,700 − 324 = ?</li>
+                            <li>405,007 − 123.3 = ?</li>
+                            <li>55.5 + 66.66 − 77.777 = ?</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa09">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p9">Compute and express each answer with the proper number of significant figures, rounding as necessary.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l17" numeration="loweralpha">                            <li>56.7 × 66.99 = ?</li>
+                            <li>1.000 ÷ 77 = ?</li>
+                            <li>1.000 ÷ 77.0 = ?</li>
+                            <li>6.022 × 1.89 = ?</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa10">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p10">Compute and express each answer with the proper number of significant figures, rounding as necessary.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l19" numeration="loweralpha">                            <li>0.000440 × 17.22 = ?</li>
+                            <li>203,000 ÷ 0.044 = ?</li>
+                            <li>67 × 85.0 × 0.0028 = ?</li>
+                            <li>999,999 ÷ 3,310 = ?</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa11">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p11">
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l21" numeration="loweralpha">                            <li>Write the number 87,449 in scientific notation with four significant figures.</li>
+                            <li>Write the number 0.000066600 in scientific notation with five significant figures.</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa12">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p12">
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l23" numeration="loweralpha">                            <li>Write the number 306,000,000 in scientific notation to the proper number of significant figures.</li>
+                            <li>Write the number 0.0000558 in scientific notation with two significant figures.</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa13">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p13">Perform each calculation and limit each answer to three significant figures.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l25" numeration="loweralpha">                            <li>67,883 × 0.004321 = ?</li>
+                            <li>(9.67 × 10<sup class="superscript">3</sup>) × 0.0055087 = ?</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa14">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s03_qs01_p14">Perform each calculation and limit each answer to four significant figures.
+						</p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l27" numeration="loweralpha">                            <li>18,900 × 76.33 ÷ 0.00336 = ?</li>
+                            <li>0.77604 ÷ 76,003 × 8.888 = ?</li>
+</ol>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div class="qandaset block" id="ball-ch02_s03_qs01_ans" defaultlabel="number">
+        <h3 class="title">Answers</h3>
+        <ol class="qandadiv">
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa01_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l2_ans" numeration="loweralpha">                            <li>375 psi</li>
+                            <li>1.30 cm</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa02_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa03_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l6_ans" numeration="loweralpha">                            <li>two</li>
+                            <li>three</li>
+                            <li>two</li>
+                            <li>four</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa04_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa05_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l10_ans" numeration="loweralpha">                            <li>five</li>
+                            <li>seven</li>
+                            <li>five</li>
+                            <li>four</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa06_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa07_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l14_ans" numeration="loweralpha">                            <li>59.4</li>
+                            <li>1.011</li>
+                            <li>13.2</li>
+                            <li>88.2</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa08_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa09_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l18_ans" numeration="loweralpha">                            <li>3.80 × 10<sup class="superscript">3</sup>
+</li>
+                            <li>0.013</li>
+                            <li>0.0130</li>
+                            <li>11.4</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa10_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa11_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l22_ans" numeration="loweralpha">                            <li>8.745 × 10<sup class="superscript">4</sup>
+</li>
+                            <li>6.6600 × 10<sup class="superscript">−5</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa12_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa13_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s03_qs01_l26_ans" numeration="loweralpha">                            <li>293</li>
+                            <li>53.3</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s03_qs01_qd01_qa14_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s06-02-expressing-units.html"><img src="shared/images/batch-left.png"></a> <a href="s06-02-expressing-units.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-04-converting-units.html">Next Section</a> <a href="s06-04-converting-units.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

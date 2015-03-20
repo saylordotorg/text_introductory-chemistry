@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Converting Units</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s06-03-significant-figures.html"><img src="shared/images/batch-left.png"></a> <a href="s06-03-significant-figures.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-05-other-units-temperature-and-de.html">Next Section</a> <a href="s06-05-other-units-temperature-and-de.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="ball-ch02_s04" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">2.4</span> Converting Units</h2>
+    <div class="learning_objectives editable block" id="ball-ch02_s04_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="ball-ch02_s04_l01">
+            <li>Convert from one unit to another unit of the same type.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="ball-ch02_s04_p01">In <a class="xref" href="ball-ch02_s02#ball-ch02_s02">Section 2.2 "Expressing Units"</a>, we showed some examples of how to replace initial units with other units of the same type to get a numerical value that is easier to comprehend. In this section, we will formalize the process.</p>
+    <p class="para editable block" id="ball-ch02_s04_p02">Consider a simple example: how many feet are there in 4 yards? Most people will almost automatically answer that there are 12 feet in 4 yards. How did you make this determination? Well, if there are 3 feet in 1 yard and there are 4 yards, then there are 4 × 3 = 12 feet in 4 yards.</p>
+    <p class="para editable block" id="ball-ch02_s04_p03">This is correct, of course, but it is informal. Let us formalize it in a way that can be applied more generally. We know that 1 yard (yd) equals 3 feet (ft):</p>
+    <span class="informalequation block"><span class="mathphrase">1 yd = 3 ft</span></span>
+    <p class="para editable block" id="ball-ch02_s04_p04">In math, this expression is called an <em class="emphasis">equality</em>. The rules of algebra say that you can change (i.e., multiply or divide or add or subtract) the equality (as long as you don’t divide by zero) and the new expression will still be an equality. For example, if we divide both sides by 2, we get</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m006" display="block"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mtext> yd</mtext><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mtext> ft</mtext></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p05">We see that one-half of a yard equals 3/2, or one and a half, feet—something we also know to be true, so the above equation is still an equality. Going back to the original equality, suppose we divide both sides of the equation by 1 yard (number <em class="emphasis">and</em> unit):</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m007" display="block"><semantics><mrow><mfrac><mrow><mtext>1 yd</mtext></mrow><mrow><mtext>1 yd</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mtext>3 ft</mtext></mrow><mrow><mtext>1 yd</mtext></mrow></mfrac></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p06">The expression is still an equality, by the rules of algebra. The left fraction equals 1. It has the same quantity in the numerator and the denominator, so it must equal 1. The quantities in the numerator and denominator cancel, both the number <em class="emphasis">and</em> the unit:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m008" display="block"><semantics><mrow><mfrac><mrow><menclose notation="updiagonalstrike"><mtext>1</mtext></menclose><menclose notation="updiagonalstrike"><mrow><mtext> yd</mtext></mrow></menclose></mrow><mrow><menclose notation="updiagonalstrike"><mtext>1</mtext></menclose><menclose notation="updiagonalstrike"><mrow><mtext> yd</mtext></mrow></menclose></mrow></mfrac><mo>=</mo><mfrac><mrow><mtext>3 ft</mtext></mrow><mrow><mtext>1 yd</mtext></mrow></mfrac></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p07">When everything cancels in a fraction, the fraction reduces to 1:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m009" display="block"><semantics><mrow><mn>1</mn><mo>=</mo><mfrac><mrow><mtext>3 ft</mtext></mrow><mrow><mtext>1 yd</mtext></mrow></mfrac></mrow></semantics></math></span>
+    <p class="para block" id="ball-ch02_s04_p08">We have an expression, <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m010" display="inline"><semantics><mrow><mfrac><mrow><mtext>3 ft</mtext></mrow><mrow><mtext>1 yd</mtext></mrow></mfrac></mrow></semantics></math></span>, that equals 1. This is a strange way to write 1, but it makes sense: 3 ft equal 1 yd, so the quantities in the numerator and denominator are the same quantity, just expressed with different units. The expression <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m011" display="inline"><semantics><mrow><mfrac><mrow><mtext>3 ft</mtext></mrow><mrow><mtext>1 yd</mtext></mrow></mfrac></mrow></semantics></math></span> is called a <span class="margin_term"><a class="glossterm">conversion factor</a><span class="glossdef">A fraction that can be used to convert a quantity from one unit to another.</span></span>, and it is used to formally change the unit of a quantity into another unit. (The process of converting units in such a formal fashion is sometimes called <em class="emphasis">dimensional analysis</em> or the <em class="emphasis">factor label method</em>.)</p>
+    <p class="para editable block" id="ball-ch02_s04_p09">To see how this happens, let us start with the original quantity:</p>
+    <span class="informalequation block"><span class="mathphrase">4 yd</span></span>
+    <p class="para block" id="ball-ch02_s04_p10">Now let us multiply this quantity by 1. When you multiply anything by 1, you don’t change the value of the quantity. Rather than multiplying by just 1, let us write 1 as <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m012" display="inline"><semantics><mrow><mfrac><mrow><mtext>3 ft</mtext></mrow><mrow><mtext>1 yd</mtext></mrow></mfrac></mrow></semantics></math></span>:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m013" display="block"><semantics><mrow><mtext>4 yd</mtext><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>3 ft</mtext></mrow><mrow><mtext>1 yd</mtext></mrow></mfrac></mrow></semantics></math></span>
+    <p class="para block" id="ball-ch02_s04_p11">The 4 yd term can be thought of as <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m014" display="inline"><semantics><mrow><mfrac><mrow><mtext>4 yd</mtext></mrow><mn>1</mn></mfrac></mrow></semantics></math></span>; that is, it can be thought of as a fraction with 1 in the denominator. We are essentially multiplying fractions. If the same thing appears in the numerator and denominator of a fraction, they cancel. In this case, what cancels is the unit <em class="emphasis">yard</em>:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m015" display="block"><semantics><mrow><mtext>4</mtext><menclose notation="updiagonalstrike"><mrow><mtext> yd</mtext></mrow></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>3 ft</mtext></mrow><mrow><mtext>1</mtext><menclose notation="updiagonalstrike"><mrow><mtext> yd</mtext></mrow></menclose></mrow></mfrac></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p12">That is all that we can cancel. Now, multiply and divide all the numbers to get the final answer:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m016" display="block"><semantics><mrow><mfrac><mrow><mn>4</mn><mtext> </mtext><mo>×</mo><mtext> </mtext><mn>3</mn><mtext> ft</mtext></mrow><mn>1</mn></mfrac><mo>=</mo><mfrac><mrow><mtext>12 ft</mtext></mrow><mn>1</mn></mfrac><mo>=</mo><mn>12</mn><mtext> ft</mtext></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p13">Again, we get an answer of 12 ft, just as we did originally. But in this case, we used a more formal procedure that is applicable to a variety of problems.</p>
+    <p class="para editable block" id="ball-ch02_s04_p14">How many millimeters are in 14.66 m? To answer this, we need to construct a conversion factor between millimeters and meters and apply it correctly to the original quantity. We start with the definition of a millimeter, which is</p>
+    <span class="informalequation block"><span class="mathphrase">1 mm = 1/1,000 m</span></span>
+    <p class="para editable block" id="ball-ch02_s04_p15">The 1/1,000 is what the prefix <em class="emphasis">milli-</em> means. Most people are more comfortable working without fractions, so we will rewrite this equation by bringing the 1,000 into the numerator of the other side of the equation:</p>
+    <span class="informalequation block"><span class="mathphrase">1,000 mm = 1 m</span></span>
+    <p class="para editable block" id="ball-ch02_s04_p16">Now we construct a conversion factor by dividing one quantity into both sides. But now a question arises: which quantity do we divide by? It turns out that we have two choices, and the two choices will give us different conversion factors, both of which equal 1:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m017" display="block"><semantics><mrow><mfrac><mrow><mn>1,000</mn><mtext> mm</mtext></mrow><mrow><mn>1,000</mn><mtext> mm</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mtext> m</mtext></mrow><mrow><mn>1,000</mn><mtext> mm</mtext></mrow></mfrac><mtext> </mtext><mtext>or</mtext><mtext> </mtext><mfrac><mrow><mn>1,000</mn><mtext> mm</mtext></mrow><mrow><mn>1</mn><mtext> m</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mtext> m</mtext></mrow><mrow><mn>1</mn><mtext> m</mtext></mrow></mfrac></mrow></semantics></math></span>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m018" display="block"><semantics><mrow><mn>1</mn><mo>=</mo><mfrac><mrow><mn>1</mn><mtext> m</mtext></mrow><mrow><mn>1,000</mn><mtext> mm</mtext></mrow></mfrac><mtext> </mtext><mtext>or</mtext><mtext> </mtext><mfrac><mrow><mn>1,000</mn><mtext> mm</mtext></mrow><mrow><mn>1</mn><mtext> m</mtext></mrow></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p17">Which conversion factor do we use? The answer is based on <em class="emphasis">what unit you want to get rid of in your initial quantity</em>. The original unit of our quantity is meters, which we want to convert to millimeters. Because the original unit is assumed to be in the numerator, to get rid of it, we want the meter unit in the <em class="emphasis">denominator</em>; then they will cancel. Therefore, we will use the second conversion factor. Canceling units and performing the mathematics, we get</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m019" display="block"><semantics><mrow><mtext>14</mtext><mo>.</mo><mtext>66</mtext><menclose notation="updiagonalstrike"><mtext> m</mtext></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mn>1,000</mn><mtext> mm</mtext></mrow><mrow><mn>1</mn><menclose notation="updiagonalstrike"><mtext> m</mtext></menclose></mrow></mfrac><mo>=</mo><mn>14,660</mn><mtext> mm</mtext></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p18">Note how m cancels, leaving mm, which is the unit of interest.</p>
+    <p class="para editable block" id="ball-ch02_s04_p19">The ability to construct and apply proper conversion factors is a very powerful mathematical technique in chemistry. You need to master this technique if you are going to be successful in this and future courses.</p>
+    <div class="exercises block" id="ball-ch02_s04_n02">
+        <h3 class="title">Example 7</h3>
+        <ol class="orderedlist" id="ball-ch02_s04_l02">
+            <li>Convert 35.9 kL to liters.</li>
+            <li>Convert 555 nm to meters.</li>
+        </ol>
+        <p class="simpara">Solution</p>
+        <ol class="orderedlist" id="ball-ch02_s04_l03">
+            <li>
+                <p class="para">We will use the fact that 1 kL = 1,000 L. Of the two conversion factors that can be defined, the one that will work is <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m020" display="inline"><semantics><mrow><mfrac><mrow><mn>1,000</mn><mtext> L</mtext></mrow><mrow><mn>1</mn><mtext> kL</mtext></mrow></mfrac></mrow></semantics></math></span>. Applying this conversion factor, we get</p>
+                <span class="informalequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m021" display="block"><semantics><mrow><mn>35.9</mn><menclose notation="updiagonalstrike"><mrow><mtext> kL</mtext></mrow></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mn>1,000</mn><mtext> L</mtext></mrow><mrow><mn>1</mn><menclose notation="updiagonalstrike"><mrow><mtext> kL</mtext></mrow></menclose></mrow></mfrac><mo>=</mo><mn>35,900</mn><mtext> L</mtext></mrow></semantics></math></span>
+            </li>
+            <li>
+                <p class="para">We will use the fact that 1 nm = 1/1,000,000,000 m, which we will rewrite as 1,000,000,000 nm = 1 m, or 10<sup class="superscript">9</sup> nm = 1 m. Of the two possible conversion factors, the appropriate one has the nm unit in the denominator: <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m022" display="inline"><semantics><mrow><mfrac><mrow><mn>1</mn><mtext> m</mtext></mrow><mrow><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><mtext> nm</mtext></mrow></mfrac></mrow></semantics></math></span>. Applying this conversion factor, we get</p>
+                <span class="informalequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m023" display="block"><semantics><mrow><mtext>555</mtext><menclose notation="updiagonalstrike"><mrow><mtext> nm</mtext></mrow></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mn>1</mn><mtext> m</mtext></mrow><mrow><msup><mrow><mn>10</mn></mrow><mn>9</mn></msup><menclose notation="updiagonalstrike"><mrow><mtext> nm</mtext></mrow></menclose></mrow></mfrac><mo>=</mo><mn>0.000000</mn><mtext>555 m</mtext><mo>=</mo><mtext>5</mtext><mo>.</mo><mtext>55</mtext><mtext> </mtext><mo>×</mo><mtext> </mtext><mtext>1</mtext><msup><mn>0</mn><mrow><mo>−</mo><mtext>7</mtext></mrow></msup><mtext> m</mtext></mrow></semantics></math></span>
+                <p class="para" id="ball-ch02_s04_p20">In the final step, we expressed the answer in scientific notation.</p>
+            </li>
+        </ol>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <ol class="orderedlist" id="ball-ch02_s04_l04">
+            <li>Convert 67.08 μL to liters.</li>
+            <li>Convert 56.8 m to kilometers.</li>
+        </ol>
+        <p class="simpara"><em class="emphasis">Answers</em></p>
+        <ol class="orderedlist" id="ball-ch02_s04_l05">
+            <li>6.708 × 10<sup class="superscript">−5</sup> L</li>
+            <li>5.68 × 10<sup class="superscript">−2</sup> km</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="ball-ch02_s04_p21">What if we have a derived unit that is the product of more than one unit, such as m<sup class="superscript">2</sup>? Suppose we want to convert square meters to square centimeters? The key is to remember that m<sup class="superscript">2</sup> means m × m, which means we have <em class="emphasis">two</em> meter units in our derived unit. That means we have to include <em class="emphasis">two</em> conversion factors, one for each unit. For example, to convert 17.6 m<sup class="superscript">2</sup> to square centimeters, we perform the conversion as follows:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m024" display="block"><semantics><mrow><mn>17.6</mn><msup><mrow><mtext> m</mtext></mrow><mn>2</mn></msup><mo>=</mo><mn>17.6</mn><mrow><mo>(</mo><mrow><menclose notation="updiagonalstrike"><mtext> m</mtext></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><menclose notation="updiagonalstrike"><mtext> m</mtext></menclose></mrow><mo>)</mo></mrow><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mn>100</mn><mtext> cm</mtext></mrow><mrow><mn>1</mn><mtext> </mtext><menclose notation="updiagonalstrike"><mtext> m</mtext></menclose></mrow></mfrac><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mn>100</mn><mtext> cm</mtext></mrow><mrow><mn>1</mn><mtext> </mtext><menclose notation="updiagonalstrike"><mtext> m</mtext></menclose></mrow></mfrac><mo>=</mo><mn>176,000</mn><mtext> cm</mtext><mtext> </mtext><mo>×</mo><mtext> </mtext><mtext>cm</mtext><mo>=</mo><mn>1.76</mn><mtext> </mtext><mo>×</mo><mtext> </mtext><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><msup><mrow><mtext> cm</mtext></mrow><mn>2</mn></msup></mrow></semantics></math></span>
+    <div class="exercises block" id="ball-ch02_s04_n03">
+        <h3 class="title">Example 8</h3>
+        <p class="para" id="ball-ch02_s04_p22">How many cubic centimeters are in 0.883 m<sup class="superscript">3</sup>?</p>
+        <p class="simpara">Solution</p>
+        <p class="para" id="ball-ch02_s04_p23">With an exponent of 3, we have three length units, so by extension we need to use three conversion factors between meters and centimeters. Thus, we have</p>
+        <span class="informalequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m025" display="block"><semantics><mrow><mn>0.883</mn><menclose notation="updiagonalstrike"><mrow><msup><mtext> m</mtext><mn>3</mn></msup></mrow></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>100 cm</mtext></mrow><mrow><mn>1</mn><menclose notation="updiagonalstrike"><mtext> m</mtext></menclose></mrow></mfrac><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>100 cm</mtext></mrow><mrow><mn>1</mn><menclose notation="updiagonalstrike"><mtext> m</mtext></menclose></mrow></mfrac><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>100 cm</mtext></mrow><mrow><mtext>1</mtext><menclose notation="updiagonalstrike"><mtext> m</mtext></menclose></mrow></mfrac><mo>=</mo><mn>883,000</mn><msup><mrow><mtext> cm</mtext></mrow><mn>3</mn></msup><mo>=</mo><mn>8.83</mn><mtext> </mtext><mo>×</mo><mtext> </mtext><msup><mrow><mn>10</mn></mrow><mn>5</mn></msup><msup><mrow><mtext> cm</mtext></mrow><mn>3</mn></msup></mrow></semantics></math></span>
+        <p class="para" id="ball-ch02_s04_p24">You should demonstrate to yourself that the three meter units do indeed cancel.</p>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <p class="para" id="ball-ch02_s04_p25">How many cubic millimeters are present in 0.0923 m<sup class="superscript">3</sup>?</p>
+        <p class="simpara"><em class="emphasis">Answer</em></p>
+        <p class="para" id="ball-ch02_s04_p26">9.23 × 10<sup class="superscript">7</sup> mm<sup class="superscript">3</sup></p>
+    </div>
+    <p class="para editable block" id="ball-ch02_s04_p27">Suppose the unit you want to convert is in the denominator of a derived unit; what then? Then, in the conversion factor, the unit you want to remove must be in the <em class="emphasis">numerator</em>. This will cancel with the original unit in the denominator and introduce a new unit in the denominator. The following example illustrates this situation.</p>
+    <div class="exercises block" id="ball-ch02_s04_n04">
+        <h3 class="title">Example 9</h3>
+        <p class="para" id="ball-ch02_s04_p28">Convert 88.4 m/min to meters/second.</p>
+        <p class="simpara">Solution</p>
+        <p class="para" id="ball-ch02_s04_p29">We want to change the unit in the denominator from minutes to seconds. Because there are 60 seconds in 1 minute (60 s = 1 min), we construct a conversion factor so that the unit we want to remove, minutes, is in the numerator: <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m026" display="inline"><semantics><mrow><mfrac><mrow><mn>1</mn><mtext> min</mtext></mrow><mrow><mn>60</mn><mtext> s</mtext></mrow></mfrac></mrow></semantics></math></span>. Apply and perform the math:</p>
+        <span class="informalequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m027" display="block"><semantics><mrow><mfrac><mrow><mn>88.4</mn><mtext> m</mtext></mrow><mrow><menclose notation="updiagonalstrike"><mrow><mtext> min</mtext></mrow></menclose></mrow></mfrac><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>1</mtext><menclose notation="updiagonalstrike"><mrow><mtext> min</mtext></mrow></menclose></mrow><mrow><mtext>60 s</mtext></mrow></mfrac><mo>=</mo><mn>1.47</mn><mtext> m/s</mtext></mrow></semantics></math></span>
+        <p class="para" id="ball-ch02_s04_p30">Notice how the 88.4 automatically goes in the numerator. That’s because any number can be thought of as being in the numerator of a fraction divided by 1.</p>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <p class="para" id="ball-ch02_s04_p31">Convert 0.203 m/min to meters/second.</p>
+        <p class="simpara"><em class="emphasis">Answer</em></p>
+        <p class="para" id="ball-ch02_s04_p32">0.00338 m/s or 3.38 × 10<sup class="superscript">−3</sup> m/s</p>
+
+    </div>
+    <p class="para editable block" id="ball-ch02_s04_p33">Sometimes there will be a need to convert from one unit with one numerical prefix to another unit with a different numerical prefix. How do we handle those conversions? Well, you could memorize the conversion factors that interrelate all numerical prefixes. Or you can go the easier route: first convert the quantity to the base unit, the unit with no numerical prefix, using the definition of the original prefix. Then convert the quantity in the base unit to the desired unit using the definition of the second prefix. You can do the conversion in two separate steps or as one long algebraic step. For example, to convert 2.77 kg to milligrams:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m028" display="block"><semantics><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mn>2.77</mn><menclose notation="updiagonalstrike"><mrow><mtext> kg</mtext></mrow></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>1,000 g</mtext></mrow><mrow><mn>1</mn><menclose notation="updiagonalstrike"><mrow><mtext> kg</mtext></mrow></menclose></mrow></mfrac><mo>=</mo><mn>2,770</mn><mtext> g</mtext></mrow></mtd><mtd columnalign="left"><mrow><mrow><mo>(</mo><mrow><mtext>convert to the base unit of grams</mtext></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></semantics></math></span>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m029" display="block"><semantics><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mn>2,770</mn><menclose notation="updiagonalstrike"><mtext> g</mtext></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>1,000 mg</mtext></mrow><mrow><mtext>1</mtext><menclose notation="updiagonalstrike"><mtext> g</mtext></menclose></mrow></mfrac><mo>=</mo><mn>2,770,000</mn><mtext> mg</mtext><mo>=</mo><mtext>2</mtext><mtext>.77</mtext><mtext> </mtext><mo>×</mo><mtext> </mtext><msup><mrow><mtext>10</mtext></mrow><mn>6</mn></msup><mtext> mg</mtext></mrow></mtd><mtd columnalign="left"><mrow><mrow><mo>(</mo><mrow><mtext>convert to desired unit</mtext></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p34">Alternatively, it can be done in a single multistep process:</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m030" display="block"><semantics><mrow><mn>2.77</mn><menclose notation="updiagonalstrike"><mrow><mtext> kg</mtext></mrow></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>1,000</mtext><menclose notation="updiagonalstrike"><mtext> g</mtext></menclose></mrow><mrow><mtext>1</mtext><menclose notation="updiagonalstrike"><mrow><mtext> kg</mtext></mrow></menclose></mrow></mfrac><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>1,000 mg</mtext></mrow><mrow><mtext>1</mtext><menclose notation="updiagonalstrike"><mtext> g</mtext></menclose></mrow></mfrac><mo>=</mo><mn>2,770,000</mn><mtext> mg</mtext><mo>=</mo><mtext>2</mtext><mtext>.77</mtext><mtext> </mtext><mo>×</mo><mtext> </mtext><msup><mrow><mtext>10</mtext></mrow><mn>6</mn></msup><mtext> mg</mtext></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p35">You get the same answer either way.</p>
+    <div class="exercises block" id="ball-ch02_s04_n05">
+        <h3 class="title">Example 10</h3>
+        <p class="para" id="ball-ch02_s04_p36">How many nanoseconds are in 368.09 μs?</p>
+        <p class="simpara">Solution</p>
+        <p class="para" id="ball-ch02_s04_p37">You can either do this as a one-step conversion from microseconds to nanoseconds or convert to the base unit first and then to the final desired unit. We will use the second method here, showing the two steps in a single line. Using the definitions of the prefixes <em class="emphasis">micro-</em> and <em class="emphasis">nano-</em>,</p>
+        <span class="informalequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m031" display="block"><semantics><mrow><mn>368.09</mn><menclose notation="updiagonalstrike"><mrow><mtext> </mtext><mi>μ</mi><mtext>s</mtext></mrow></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mtext>1</mtext><menclose notation="updiagonalstrike"><mtext> s</mtext></menclose></mrow><mrow><mn>1,000,000</mn><menclose notation="updiagonalstrike"><mrow><mtext> </mtext><mi>μ</mi><mtext>s</mtext></mrow></menclose></mrow></mfrac><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mn>1,000,000,000</mn><mtext> ns</mtext></mrow><mrow><mn>1</mn><menclose notation="updiagonalstrike"><mtext> s</mtext></menclose></mrow></mfrac><mo>=</mo><mn>368,090</mn><mtext> ns</mtext><mo>=</mo><mtext>3</mtext><mtext>.6809</mtext><mtext> </mtext><mo>×</mo><mtext> </mtext><msup><mrow><mtext>10</mtext></mrow><mn>5</mn></msup><mtext> ns</mtext></mrow></semantics></math></span>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <p class="para" id="ball-ch02_s04_p38">How many milliliters are in 607.8 kL?</p>
+        <p class="simpara"><em class="emphasis">Answer</em></p>
+        <p class="para" id="ball-ch02_s04_p39">6.078 × 10<sup class="superscript">8</sup> mL</p>
+    </div>
+    <p class="para editable block" id="ball-ch02_s04_p40">When considering the significant figures of a final numerical answer in a conversion, there is one important case where a number does not impact the number of significant figures in a final answer—the so-called <span class="margin_term"><a class="glossterm">exact number</a><span class="glossdef">A number from a defined relationship that technically has an infinite number of significant figures.</span></span>. An exact number is a number from a defined relationship, not a measured one. For example, the prefix <em class="emphasis">kilo-</em> means 1,000—<em class="emphasis">exactly</em> 1,000, no more or no less. Thus, in constructing the conversion factor</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m032" display="block"><semantics><mrow><mfrac><mrow><mn>1,000</mn><mtext> g</mtext></mrow><mrow><mn>1</mn><mtext> kg</mtext></mrow></mfrac></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p41">neither the 1,000 nor the 1 enter into our consideration of significant figures. The numbers in the numerator and denominator are defined exactly by what the prefix <em class="emphasis">kilo-</em> means. Another way of thinking about it is that these numbers can be thought of as having an infinite number of significant figures, such as</p>
+    <span class="informalequation block"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m033" display="block"><semantics><mrow><mfrac><mrow><mn>1,000.0000000000</mn><mo>…</mo><mtext> g</mtext></mrow><mrow><mn>1.0000000000</mn><mo>…</mo><mtext> kg</mtext></mrow></mfrac></mrow></semantics></math></span>
+    <p class="para editable block" id="ball-ch02_s04_p42">The other numbers in the calculation will determine the number of significant figures in the final answer.</p>
+    <div class="exercises block" id="ball-ch02_s04_n06">
+        <h3 class="title">Example 11</h3>
+        <p class="para" id="ball-ch02_s04_p43">A rectangular plot in a garden has the dimensions 36.7 cm by 128.8 cm. What is the area of the garden plot in square meters? Express your answer in the proper number of significant figures.</p>
+        <p class="simpara">Solution</p>
+        <p class="para" id="ball-ch02_s04_p44">Area is defined as the product of the two dimensions, which we then have to convert to square meters and express our final answer to the correct number of significant figures, which in this case will be three.</p>
+        <span class="informalequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m034" display="block"><semantics><mrow><mn>36.7</mn><menclose notation="updiagonalstrike"><mrow><mtext> cm</mtext></mrow></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mtext>128</mtext><mtext>.8</mtext><menclose notation="updiagonalstrike"><mrow><mtext> cm</mtext></mrow></menclose><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mn>1</mn><mtext> m</mtext></mrow><mrow><mn>100</mn><menclose notation="updiagonalstrike"><mrow><mtext> cm</mtext></mrow></menclose></mrow></mfrac><mtext> </mtext><mo>×</mo><mtext> </mtext><mfrac><mrow><mn>1</mn><mtext> m</mtext></mrow><mrow><mn>100</mn><menclose notation="updiagonalstrike"><mrow><mtext> cm</mtext></mrow></menclose></mrow></mfrac><mo>=</mo><mn>0.472696</mn><msup><mrow><mtext> m</mtext></mrow><mn>2</mn></msup><mo>=</mo><mn>0.473</mn><msup><mrow><mtext> m</mtext></mrow><mn>2</mn></msup></mrow></semantics></math></span>
+        <p class="para" id="ball-ch02_s04_p45">The 1 and 100 in the conversion factors do not affect the determination of significant figures because they are exact numbers, defined by the centi- prefix.</p>
+        <p class="simpara"><em class="emphasis bolditalic">Test Yourself</em></p>
+        <p class="para" id="ball-ch02_s04_p46">What is the volume of a block in cubic meters whose dimensions are 2.1 cm × 34.0 cm × 118 cm?</p>
+        <p class="simpara"><em class="emphasis">Answer</em></p>
+        <p class="para" id="ball-ch02_s04_p47">0.0084 m<sup class="superscript">3</sup></p>
+    </div>
+    <div class="callout block" id="ball-ch02_s04_n07">
+        <h3 class="title">Chemistry Is Everywhere: The Gimli Glider</h3>
+        <p class="para" id="ball-ch02_s04_p48">On July 23, 1983, an Air Canada Boeing 767 jet had to glide to an emergency landing at Gimli Industrial Park Airport in Gimli, Manitoba, because it unexpectedly ran out of fuel during flight. There was no loss of life in the course of the emergency landing, only some minor injuries associated in part with the evacuation of the craft after landing. For the remainder of its operational life (the plane was retired in 2008), the aircraft was nicknamed “the Gimli Glider.”</p>
+        <div class="informalfigure large" id="ball-ch02_s04_f02">
+            <img src="section_06/0f7101ae04a77cfd8e935edff18e3e21.jpg">
+            <p class="para">The Gimli Glider is the Boeing 767 that ran out of fuel and glided to safety at Gimli Airport. The aircraft ran out of fuel because of confusion over the units used to express the amount of fuel.</p>
+            <div class="copyright">
+                <p class="para">Source: Photo courtesy of Will F., <a class="link" target="_blank" href="http://commons.wikimedia.org/wiki/File:Gimli_Glider_today.jpg">http://commons.wikimedia.org/wiki/File:Gimli_Glider_today.jpg</a>.</p>
+            </div>
+        </div>
+        <p class="para" id="ball-ch02_s04_p49">The 767 took off from Montreal on its way to Ottawa, ultimately heading for Edmonton, Canada. About halfway through the flight, all the engines on the plane began to shut down because of a lack of fuel. When the final engine cut off, all electricity (which was generated by the engines) was lost; the plane became, essentially, a powerless glider. Captain Robert Pearson was an experienced glider pilot, although he had never flown a glider the size of a 767. First Officer Maurice Quintal quickly determined that the aircraft would not be able make it to Winnipeg, the next large airport. He suggested his old Royal Air Force base at Gimli Station, one of whose runways was still being used as a community airport. Between the efforts of the pilots and the flight crew, they managed to get the airplane safely on the ground (although with buckled landing gear) and all passengers off safely.</p>
+        <p class="para" id="ball-ch02_s04_p50">What happened? At the time, Canada was transitioning from the older English system to the metric system. The Boeing 767s were the first aircraft whose gauges were calibrated in the metric system of units (liters and kilograms) rather than the English system of units (gallons and pounds). Thus, when the fuel gauge read 22,300, the gauge meant kilograms, but the ground crew mistakenly fueled the plane with 22,300 <em class="emphasis">pounds</em> of fuel. This ended up being just less than half of the fuel needed to make the trip, causing the engines to quit about halfway to Ottawa. Quick thinking and extraordinary skill saved the lives of 61 passengers and 8 crew members—an incident that would not have occurred if people were watching their units.</p>
+    </div>
+    <div class="key_takeaways editable block" id="ball-ch02_s04_n08">
+        <h3 class="title">Key Takeaways</h3>
+        <ul class="itemizedlist" id="ball-ch02_s04_l06">
+            <li>Units can be converted to other units using the proper conversion factors.</li>
+            <li>Conversion factors are constructed from equalities that relate two different units.</li>
+            <li>Conversions can be a single step or multistep.</li>
+            <li>Unit conversion is a powerful mathematical technique in chemistry that must be mastered.</li>
+            <li>Exact numbers do not affect the determination of significant figures.</li>
+        </ul>
+    </div>
+    <div class="qandaset block" id="ball-ch02_s04_qs01" defaultlabel="number">
+        <h3 class="title">Exercises</h3>
+        <ol class="qandadiv" id="ball-ch02_s04_qs01_qd01">
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa01">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p1">Write the two conversion factors that exist between the two given units.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l1" numeration="loweralpha">
+                        <li>milliliters and liters</li>
+                        <li>microseconds and seconds</li>
+                        <li>kilometers and meters</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa02">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p2">Write the two conversion factors that exist between the two given units.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l3" numeration="loweralpha">
+                        <li>kilograms and grams</li>
+                        <li>milliseconds and seconds</li>
+                        <li>centimeters and meters</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa03">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p3">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l5" numeration="loweralpha">
+                        <li>5.4 km to meters</li>
+                        <li>0.665 m to millimeters</li>
+                        <li>0.665 m to kilometers</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa04">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p4">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l7" numeration="loweralpha">
+                        <li>90.6 mL to liters</li>
+                        <li>0.00066 ML to liters</li>
+                        <li>750 L to kiloliters</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa05">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p5">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l9" numeration="loweralpha">
+                        <li>17.8 μg to grams</li>
+                        <li>7.22 × 10<sup class="superscript">2</sup> kg to grams</li>
+                        <li>0.00118 g to nanograms</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa06">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p6">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l11" numeration="loweralpha">
+                        <li>833 ns to seconds</li>
+                        <li>5.809 s to milliseconds</li>
+                        <li>2.77 × 10<sup class="superscript">6</sup> s to megaseconds</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa07">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p7">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l13" numeration="loweralpha">
+                        <li>9.44 m<sup class="superscript">2</sup> to square centimeters</li>
+                        <li>3.44 × 10<sup class="superscript">8</sup> mm<sup class="superscript">3</sup> to cubic meters</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa08">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p8">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l15" numeration="loweralpha">
+                        <li>0.00444 cm<sup class="superscript">3</sup> to cubic meters</li>
+                        <li>8.11 × 10<sup class="superscript">2</sup> m<sup class="superscript">2</sup> to square nanometers</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa09">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p9">Why would it be inappropriate to convert square centimeters to cubic meters?</p>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa10">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p11">Why would it be inappropriate to convert from cubic meters to cubic seconds?</p>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa11">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p13">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l17" numeration="loweralpha">
+                        <li>45.0 m/min to meters/second</li>
+                        <li>0.000444 m/s to micrometers/second</li>
+                        <li>60.0 km/h to kilometers/second</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa12">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p14">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l19" numeration="loweralpha">
+                        <li>3.4 × 10<sup class="superscript">2</sup> cm/s to centimeters/minute</li>
+                        <li>26.6 mm/s to millimeters/hour</li>
+                        <li>13.7 kg/L to kilograms/milliliters</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa13">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p15">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l21" numeration="loweralpha">
+                        <li>0.674 kL to milliliters</li>
+                        <li>2.81 × 10<sup class="superscript">12</sup> mm to kilometers</li>
+                        <li>94.5 kg to milligrams</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa14">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p16">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l23" numeration="loweralpha">
+                        <li>6.79 × 10<sup class="superscript">−6</sup> kg to micrograms</li>
+                        <li>1.22 mL to kiloliters</li>
+                        <li>9.508 × 10<sup class="superscript">−9</sup> ks to milliseconds</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa15">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p17">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l25" numeration="loweralpha">
+                        <li>6.77 × 10<sup class="superscript">14</sup> ms to kiloseconds</li>
+                        <li>34,550,000 cm to kilometers</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa16">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p18">Perform the following conversions.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l27" numeration="loweralpha">
+                        <li>4.701 × 10<sup class="superscript">15</sup> mL to kiloliters</li>
+                        <li>8.022 × 10<sup class="superscript">−11</sup> ks to microseconds</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa17">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p19">Perform the following conversions. Note that you will have to convert units in both the numerator and the denominator.</p>
+                    <ol class="orderedlist" id="ball-ch02_s04_qs01_l29" numeration="loweralpha">
+                        <li>88 ft/s to miles/hour (Hint: use 5,280 ft = 1 mi.)</li>
+                        <li>0.00667 km/h to meters/second</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa18">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p20">Perform the following conversions. Note that you will have to convert units in both the numerator and the denominator.
+					</p>
+<ol class="orderedlist" id="ball-ch02_s04_qs01_l31" numeration="loweralpha">                            <li>3.88 × 10<sup class="superscript">2</sup> mm/s to kilometers/hour</li>
+                            <li>1.004 kg/L to grams/milliliter</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa19">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p21">What is the area in square millimeters of a rectangle whose sides are 2.44 cm × 6.077 cm? Express the answer to the proper number of significant figures.</p>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa20">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p23">What is the volume in cubic centimeters of a cube with sides of 0.774 m? Express the answer to the proper number of significant figures.</p>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa21">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p25">The formula for the area of a triangle is 1/2 × base × height. What is the area of a triangle in square centimeters if its base is 1.007 m and its height is 0.665 m? Express the answer to the proper number of significant figures.</p>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa22">
+                <div class="question">
+                    <p class="para" id="ball-ch02_s04_qs01_p27">The formula for the area of a triangle is 1/2 × base × height. What is the area of a triangle in square meters if its base is 166 mm and its height is 930.0 mm? Express the answer to the proper number of significant figures.</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div class="qandaset block" id="ball-ch02_s04_qs01_ans" defaultlabel="number">
+        <h3 class="title">Answers</h3>
+        <ol class="qandadiv">
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa01_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s04_qs01_l2_ans" numeration="loweralpha">                            <li>
+<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m035" display="inline"><semantics><mrow><mfrac><mrow><mtext>1,000 mL</mtext></mrow><mrow><mn>1</mn><mtext> L</mtext></mrow></mfrac></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m036" display="inline"><semantics><mrow><mfrac><mrow><mtext>1 L</mtext></mrow><mrow><mtext>1,000 mL</mtext></mrow></mfrac></mrow></semantics></math></span>
+</li>
+                            <li>
+<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m037" display="inline"><semantics><mrow><mfrac><mrow><mtext>1,000,000 </mtext><mi>μ</mi><mtext>s</mtext></mrow><mrow><mn>1</mn><mtext> s</mtext></mrow></mfrac></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m038" display="inline"><semantics><mrow><mfrac><mrow><mtext>1 s</mtext></mrow><mrow><mtext>1,000,000 </mtext><mi>μ</mi><mtext>s</mtext></mrow></mfrac></mrow></semantics></math></span>
+</li>
+                            <li>
+<span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m039" display="inline"><semantics><mrow><mfrac><mrow><mtext>1,000 m</mtext></mrow><mrow><mn>1</mn><mtext> km</mtext></mrow></mfrac></mrow></semantics></math></span> and <span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="ball-ch02_m040" display="inline"><semantics><mrow><mfrac><mrow><mtext>1 km</mtext></mrow><mrow><mtext>1,000 m</mtext></mrow></mfrac></mrow></semantics></math></span>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa02_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa03_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s04_qs01_l6_ans" numeration="loweralpha">                            <li>5,400 m</li>
+                            <li>665 mm</li>
+                            <li>6.65 × 10<sup class="superscript">−4</sup> km</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa04_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa05_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s04_qs01_l10_ans" numeration="loweralpha">                            <li>1.78 × 10<sup class="superscript">−5</sup> g</li>
+                            <li>7.22 × 10<sup class="superscript">5</sup> g</li>
+                            <li>1.18 × 10<sup class="superscript">6</sup> ng</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa06_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa07_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s04_qs01_l14_ans" numeration="loweralpha">                            <li>94,400 cm<sup class="superscript">2</sup>
+</li>
+                            <li>0.344 m<sup class="superscript">3</sup>
+</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa08_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa09_ans">
+                <div class="answer">
+                    <p class="para" id="ball-ch02_s04_qs01_p10_ans">One is a unit of area, and the other is a unit of volume.</p>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa10_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa11_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s04_qs01_l18_ans" numeration="loweralpha">                            <li>0.75 m/s</li>
+                            <li>444 µm/s</li>
+                            <li>1.666 × 10<sup class="superscript">−2</sup> km/s</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa12_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa13_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s04_qs01_l22_ans" numeration="loweralpha">                            <li>674,000 mL</li>
+                            <li>2.81 × 10<sup class="superscript">6</sup> km</li>
+                            <li>9.45 × 10<sup class="superscript">7</sup> mg</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa14_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa15_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s04_qs01_l26_ans" numeration="loweralpha">                            <li>6.77 × 10<sup class="superscript">8</sup> ks</li>
+                            <li>345.5 km</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa16_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa17_ans">
+                <div class="answer">
+                    <p class="para"></p>
+<ol class="orderedlist" id="ball-ch02_s04_qs01_l30_ans" numeration="loweralpha">                            <li>6.0 × 10<sup class="superscript">1</sup> mi/h</li>
+                            <li>0.00185 m/s</li>
+</ol>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa18_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa19_ans">
+                <div class="answer">
+                    <p class="para" id="ball-ch02_s04_qs01_p22_ans">1.48 × 10<sup class="superscript">3</sup> mm<sup class="superscript">2</sup></p>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa20_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa21_ans">
+                <div class="answer">
+                    <p class="para" id="ball-ch02_s04_qs01_p26_ans">3.35 × 10<sup class="superscript">3</sup> cm<sup class="superscript">2</sup></p>
+                </div>
+            </li>
+            <li class="qandaentry" id="ball-ch02_s04_qs01_qd01_qa22_ans" audience="instructoronly">
+                <div class="answer" audience="instructoronly" d="" html="http://www.w3.org/1999/xhtml" mml="http://www.w3.org/1998/Math/MathML" xlink="http://www.w3.org/1999/xlink" xml="http://www.w3.org/XML/1998/namespace">
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s06-03-significant-figures.html"><img src="shared/images/batch-left.png"></a> <a href="s06-03-significant-figures.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-05-other-units-temperature-and-de.html">Next Section</a> <a href="s06-05-other-units-temperature-and-de.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>
